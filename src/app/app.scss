@@ -1,0 +1,70 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Paleta mínima */
+:root {
+  --bg: #0a192f;       /* fondo principal */
+  --text: #e9ebf4;     /* color del texto */
+  --primary: #6D6DFA;  /* botones primarios */
+}
+
+html, body {
+  height: 100%;
+  width: 100%;                // 👈 Cambia a 100%
+  background: var(--bg);
+  color: var(--text);         // 👈 Usa el color de texto correcto
+  font-family: 'Poppins', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+/* Títulos */
+h1 {
+    font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 32px;
+}
+
+/* Contenido centrado */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 15px;
+    padding: 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  main {
+    padding: 4px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 15px;
+    padding: 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+    padding: 16px 8px;
+  }
+  main {
+    padding: 4px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

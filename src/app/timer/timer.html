@@ -1,0 +1,26 @@
+<div class="timer-box">
+  <h2>Temporizador</h2>
+
+  <p>Inicio: {{ startTimeStr() }}</p>
+  <p>Tarea: {{ currentTask() }} / {{ totalTasks }}</p>
+
+  <p class="time-display">
+    Tiempo restante: {{ mmss() }}
+  </p>
+
+  <p>Progreso: {{ percent() | number:'1.0-0' }}%</p>
+  <p>Ciclos completados: {{ cycles() }}</p>
+
+  <div>
+    <button (click)="start()">Iniciar</button>
+    <button (click)="pause()">Pausar</button>
+    <button (click)="resetCycle()">Reiniciar</button>
+  </div>
+
+  <div class="task-map">
+    <span *ngFor="let i of taskArray; index as idx"
+          [style.color]="idx+1 < currentTask() ? 'lightgreen' : (idx+1 === currentTask() ? 'orange' : 'gray')">
+      ●
+    </span>
+  </div>
+</div>

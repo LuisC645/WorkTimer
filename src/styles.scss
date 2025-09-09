@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Paleta mínima */
+:root {
+  --bg: #0a192f;      /* fondo */
+  --text: #e9ebf4;    /* texto */
+  --primary: #6D6DFA; /* primario */
+  --secundary: oklab(0.196273 -0.00274863 -0.0295485); /* secundario */
+}
+
+.timer-box{
+    align-items: center;
+    background-color: var(--secundary);
+    padding: 50px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+html, body {
+  height: 100%;
+  align-items: center;
+  padding: 5px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 32px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
