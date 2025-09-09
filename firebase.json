@@ -1,8 +1,6 @@
 {
   "hosting": {
-    "public": "dist/mi-proyecto/browser",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "public": "dist/work/browser",
     "rewrites": [{ "source": "**", "destination": "/index.html" }]
   }
-
 }
